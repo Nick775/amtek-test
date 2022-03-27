@@ -17,11 +17,9 @@ public class ApplicationController {
 	@Resource
 	ParkingService parkingService;
 
-
 	@PutMapping(value = "/executeParkingEmp")
 	public void executeParking(@RequestBody Parking emp) {
 		 parkingService.executeParking(emp);
-	
 	}
 
 }
